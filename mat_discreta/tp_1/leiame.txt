@@ -1,0 +1,13 @@
+Para rodar os programas "espquadrada.c" e "esptriangular.c" é necessário ter algum compilador C ou C++ instalado em seu ambiente.
+
+Os testes iniciais foram feitos usando o gcc, que pode ser baixado atraves do link (https://gcc.gnu.org/), e o ambiente Linux.
+
+Tendo o compilador instalado em sua máquina, abra o terminal nesta pasta, e rode os comandos:
+
+- espquadrada.c:
+  `g++ espquadrada.c -o espquadrada`
+  `./espquadrada`
+
+- esptriangular.c:
+  `g++ esptriangular.c -o esptriangular`
+  `./esptriangular`
