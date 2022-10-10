@@ -38,6 +38,6 @@ clean:
 	-@rm -rvf $(APP_DIR)/*
 
 run:
-	./$(BUILD)/$(TARGET) teste.txt
+	./$(BUILD)/$(TARGET) < teste.txt
 
 r: all run

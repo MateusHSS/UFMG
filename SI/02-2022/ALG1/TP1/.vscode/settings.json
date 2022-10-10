@@ -36,6 +36,7 @@
     "xutility": "cpp",
     "tuple": "cpp",
     "string": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "deque": "cpp"
   }
 }
