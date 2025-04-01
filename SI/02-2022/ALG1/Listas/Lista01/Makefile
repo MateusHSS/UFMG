@@ -19,6 +19,10 @@ $(OBJ_DIR)/1b.o: ./src/1b.cpp
 	@mkdir -p $(@D)
 	$(CXX) $(CXXFLAGS) $(INCLUDE) -g -o $@ -c ./src/1b.cpp
 
+$(OBJ_DIR)/1c.o: ./src/1c.cpp
+	@mkdir -p $(@D)
+	$(CXX) $(CXXFLAGS) $(INCLUDE) -g -o $@ -c ./src/1c.cpp
+
 build:
 	@mkdir -p $(APP_DIR)
 	@mkdir -p $(OBJ_DIR)
@@ -30,6 +34,10 @@ build:
 1b: $(OBJ_DIR)/1b.o
 	@mkdir -p $(@D)
 	$(CXX) $(CXXFLAGS) $(INCLUDE) -g -o $(APP_DIR)/$@ ./objects/1b.o $(LDFLAGS)
+
+1c: $(OBJ_DIR)/1c.o
+	@mkdir -p $(@D)
+	$(CXX) $(CXXFLAGS) $(INCLUDE) -g -o $(APP_DIR)/$@ ./objects/1c.o $(LDFLAGS)
 
 teste: $(OBJ_DIR)/teste.o
 	$(CXX) $(CXXFLAGS) $(INCLUDE) -g -o $(APP_DIR)/$@ ./objects/teste.o $(LDFLAGS)
